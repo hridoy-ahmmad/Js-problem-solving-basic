@@ -7,9 +7,6 @@ for (let i = 1; i <= 30; i++) {
     }else{
         console.log('row', i + ' - Normal Row ');
         totalIncome += 500
-    }
-
-    
-    
+    }  
 }
 console.log('Total Income = ', totalIncome);
