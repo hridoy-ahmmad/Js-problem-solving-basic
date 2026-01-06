@@ -23,3 +23,31 @@ If the word "limited edition" is in the details, then the program output will sh
 If none of the conditions are met, then a default tag "Tag: General"
 
 ADVANCED: Handle case insensitively.
+
+
+// Problem 03:
+A new company, "AlphaCorp", wants to automatically generate a Unique Employee username for their employees to access their database. This username will be based on some personal information about the employee.
+
+You need to write a program that takes an object named employee as input, where the employee information is as follows:
+{ 
+    firstName: "Nozrul", 
+    lastName: "Islam", 
+    employeeId: 101, 
+    departmentCode: "HR" }
+
+// Output:
+username: doe101@alphacorp.com
+
+Rules:
+👉 First, the first three letters of lastName will be lowercase.
+👉 Then, the employeeId.
+👉 Then, the @.
+👉 Then, the company name will be lowercase.
+👉 Finally, the .com.
+
+ADVANCED: Generate a Temporary Password along with the username.
+👉 If lastName is less than three characters, then all the letters of lastName will be used.
+👉 for Password generate use firstname last 3 char + # + departmentCode
+
+// Output:
+ID: doe101@alphacorp.com, TempPass: jn1#AC
